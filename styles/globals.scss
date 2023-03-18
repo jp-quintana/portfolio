@@ -1,0 +1,40 @@
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Monument Extended', sans-serif;
+  font-weight: 400;
+  color: #000;
+  font-size: 1.2rem;
+  line-height: 1.5;
+}
+
+a {
+  text-decoration: none;
+
+  &:hover {
+    color: inherit;
+  }
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-size: 1.6rem;
+}
+
+img {
+  max-width: 100%;
+}
