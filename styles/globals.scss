@@ -1,3 +1,5 @@
+@import './variables.scss';
+
 html {
   box-sizing: border-box;
   font-size: 62.5%;
@@ -13,7 +15,7 @@ html {
 }
 
 body {
-  font-family: 'Monument Extended', sans-serif;
+  font-family: $font-f-primary;
   font-weight: 400;
   color: #000;
   font-size: 1.2rem;
@@ -28,6 +30,10 @@ a {
   }
 }
 
+ul {
+  list-style: none;
+}
+
 h1,
 h2,
 h3,
@@ -37,4 +43,10 @@ h4 {
 
 img {
   max-width: 100%;
+}
+
+.main-container {
+  width: 120rem;
+  max-width: 90%;
+  margin: 0 auto;
 }

@@ -1,0 +1,11 @@
+.nav {
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+
+  .list {
+    margin-left: auto;
+    display: flex;
+    gap: 1rem;
+  }
+}
