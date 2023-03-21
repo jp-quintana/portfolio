@@ -1,0 +1,30 @@
+.section {
+  // TODO: check
+  height: calc(100vh - 4.3rem);
+  display: flex;
+  justify-content: center;
+
+  .container {
+    padding-top: 10rem;
+
+    .title_wrapper {
+      padding-bottom: 1rem;
+      .title {
+        font-size: 4rem;
+        font-weight: 900;
+      }
+
+      .subtitle {
+      }
+    }
+
+    .socials {
+      display: flex;
+      gap: 1rem;
+      padding: 1rem 0;
+      border-top: 1px solid #000;
+      width: 50%;
+      font-size: 3rem;
+    }
+  }
+}
