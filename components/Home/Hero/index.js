@@ -9,10 +9,10 @@ const Hero = () => {
         <div className={styles.hero_content}>
           <div className={styles.title_wrapper}>
             <h1 className={styles.title}>full stack developer</h1>
-            <h2 className={styles.subtitle}>
+            <p className={styles.subtitle}>
               currently looking for an entry-level job. based out of buenos
               aires, argentina. 📍 🇦🇷
-            </h2>
+            </p>
           </div>
           <ul className={styles.socials}>
             <li>

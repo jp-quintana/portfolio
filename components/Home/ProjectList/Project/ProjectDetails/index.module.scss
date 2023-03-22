@@ -1,0 +1,36 @@
+@import '@/styles/variables.scss';
+
+.container {
+  color: $color-light;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  flex: 1 1 0;
+  width: 0;
+  font-size: 1.6rem;
+
+  .header {
+    font-size: 2.4rem;
+    font-weight: 700;
+    text-align: center;
+  }
+
+  .body {
+    a {
+      text-decoration: underline;
+    }
+  }
+
+  .features {
+    ul {
+      li {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+      }
+    }
+  }
+
+  .footer {
+  }
+}

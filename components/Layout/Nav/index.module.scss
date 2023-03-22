@@ -4,13 +4,12 @@
   // TODO: check
   position: fixed;
   width: 100%;
-  z-index: 1;
 
   .nav {
     display: flex;
     align-items: center;
     padding: 1rem;
-    // background: $background-primary;
+
     z-index: 1;
 
     .logo {
