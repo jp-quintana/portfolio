@@ -8,8 +8,13 @@ const Layout = ({ children }) => {
       <header className={styles.header}>
         <Nav />
       </header>
-      <main>{children}</main>
-      <footer></footer>
+      {/* <div className={styles.background}>
+        <video autoPlay loop muted>
+          <source src="videos/background.mp4" type="video/mp4" />
+        </video>
+      </div> */}
+      <main className={styles.main}>{children}</main>
+      <footer className={styles.footer}></footer>
     </>
   );
 };
