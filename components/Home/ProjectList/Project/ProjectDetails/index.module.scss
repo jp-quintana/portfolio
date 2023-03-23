@@ -1,7 +1,7 @@
 @import '@/styles/variables.scss';
 
 .container {
-  color: $color-light;
+  color: $color-dark;
   display: flex;
   flex-direction: column;
   gap: 3rem;
@@ -35,7 +35,7 @@
 
   .stack {
     width: 100%;
-    border-bottom: 1px solid $color-light;
+    border-bottom: 1px solid $color-dark;
 
     ul {
       padding: 1rem;

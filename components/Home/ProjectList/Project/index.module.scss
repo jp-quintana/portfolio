@@ -6,24 +6,39 @@
   align-items: center;
   justify-content: center;
 
+  .wrapper {
+    margin: 3rem;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem 4rem;
+    border-radius: 1rem;
+    background: $background-light;
+  }
+
   .content {
     display: flex;
+    width: 100%;
     flex-direction: column;
     gap: 5rem;
 
     .header {
-      color: $color-light;
-      font-size: 6rem;
+      color: $color-dark;
+      font-size: 4rem;
+      line-height: 1;
+      font-weight: 900;
     }
 
     .body {
       display: flex;
-      align-items: flex-start;
+      align-items: center;
       gap: 3rem;
 
       .image {
         flex: 1 1 0;
         width: 0;
+        border-radius: 1rem;
       }
     }
   }

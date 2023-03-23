@@ -1,7 +1,9 @@
 @import '@/styles/variables.scss';
 
 .section {
-  min-height: 100vh;
+  min-height: 200vh;
+  display: flex;
+  flex-direction: column;
   background: #000;
   position: relative;
   z-index: 1;
@@ -9,12 +11,18 @@
   .section_title_wrapper {
     padding: 1rem 0;
     position: sticky;
-    top: 0;
+    top: 8.3rem;
 
     .section_title {
       writing-mode: vertical-lr;
       color: $color-light;
       user-select: none;
     }
+  }
+
+  .float {
+    width: 100%;
+    position: absolute;
+    top: 0;
   }
 }

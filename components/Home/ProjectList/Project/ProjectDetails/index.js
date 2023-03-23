@@ -25,7 +25,6 @@ const ProjectDetails = ({
 
   return (
     <div className={styles.container}>
-      <p className={styles.header}>{name}</p>
       <div className={styles.description}>{descriptionContent}</div>
       <div className={styles.features}>
         Features:
