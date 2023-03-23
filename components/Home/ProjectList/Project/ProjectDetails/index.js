@@ -26,14 +26,24 @@ const ProjectDetails = ({
   return (
     <div className={styles.container}>
       <p className={styles.header}>{name}</p>
-      <div className={styles.body}>{descriptionContent}</div>
+      <div className={styles.description}>{descriptionContent}</div>
       <div className={styles.features}>
         Features:
         <ul>
           {features.map((feature) => (
-            <li id={feature.id}>
+            <li key={feature.id}>
               <FaAngleRight />
               {feature.name}
+            </li>
+          ))}
+        </ul>
+      </div>
+      <div className={styles.stack}>
+        Stack:
+        <ul className={styles.icons}>
+          {stackItems.map((item) => (
+            <li key={item.id}>
+              <img src={item.image} alt={item.image} />
             </li>
           ))}
         </ul>

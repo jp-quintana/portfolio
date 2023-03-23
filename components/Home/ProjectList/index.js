@@ -18,16 +18,15 @@ const projects = [
         { id: '5', name: 'user orders' },
       ],
       stackItems: [
-        { id: '1', image: 'react' },
-        { id: '2', image: 'firebase' },
-        { id: '3', image: 'scss' },
+        { id: '1', image: 'svgs/react.svg' },
+        { id: '2', image: 'svgs/firebase.svg' },
+        { id: '3', image: 'svgs/scss.svg' },
       ],
       buttons: [
         {
           id: '1',
           content: 'code',
           href: 'https://github.com/jp-quintana/react-shopping-cart',
-          image: 'github',
         },
         {
           id: '2',
@@ -52,9 +51,9 @@ const projects = [
         { id: '5', name: 'user orders' },
       ],
       stackItems: [
-        { id: '1', image: 'react' },
-        { id: '2', image: 'firebase' },
-        { id: '3', image: 'scss' },
+        { id: '1', image: 'svgs/react.svg' },
+        { id: '2', image: 'svgs/firebase.svg' },
+        { id: '3', image: 'svgs/scss.svg' },
       ],
       buttons: [
         {
@@ -81,7 +80,7 @@ const ProjectList = () => {
       </div>
       {projects.map((project, index) => (
         <Project
-          id={project.id}
+          key={project.id}
           index={index}
           name={project.name}
           image={project.image}

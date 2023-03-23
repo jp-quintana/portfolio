@@ -8,7 +8,7 @@ const Project = ({ index, name, image, details }) => {
       <div className={`${styles.content} main-container`}>
         <h2 className={styles.header}>{name}</h2>
         <div className={styles.body}>
-          <img src={image} alt="" />
+          <img className={styles.image} src={image} alt="" />
           <ProjectDetails
             projectName={name}
             name={details.name}

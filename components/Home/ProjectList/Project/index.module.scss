@@ -18,10 +18,10 @@
 
     .body {
       display: flex;
-      align-items: center;
+      align-items: flex-start;
       gap: 3rem;
 
-      img {
+      .image {
         flex: 1 1 0;
         width: 0;
       }
