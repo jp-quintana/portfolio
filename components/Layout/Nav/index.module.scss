@@ -4,13 +4,13 @@
   // TODO: check
   position: fixed;
   width: 100%;
+  background-color: $background-light;
 
   .nav {
     display: flex;
     align-items: center;
     padding: 1rem;
-
-    z-index: 1;
+    transition: color 0.2s ease-in-out;
 
     .logo {
       font-weight: 900;
@@ -24,5 +24,14 @@
       font-size: 1.6rem;
       font-weight: 700;
     }
+  }
+}
+
+.container_rest {
+  background-color: $background-dark;
+  z-index: 99;
+
+  .nav_rest {
+    color: $color-light;
   }
 }
