@@ -7,8 +7,10 @@
   justify-content: center;
 
   .wrapper {
+    position: relative;
     margin: 3rem;
-    width: 80%;
+    width: 70%;
+    min-height: 70vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -17,29 +19,29 @@
     background: $background-light;
   }
 
+  .title {
+    padding: 3rem 2rem;
+    top: 0;
+    left: 0;
+    position: absolute;
+    color: $color-dark;
+    font-size: 4rem;
+    line-height: 1;
+    font-weight: 900;
+    writing-mode: vertical-lr;
+  }
+
   .content {
-    display: flex;
     width: 100%;
-    flex-direction: column;
-    gap: 5rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    gap: 3rem;
 
-    .header {
-      color: $color-dark;
-      font-size: 4rem;
-      line-height: 1;
-      font-weight: 900;
-    }
-
-    .body {
-      display: flex;
-      align-items: center;
-      gap: 3rem;
-
-      .image {
-        flex: 1 1 0;
-        width: 0;
-        border-radius: 1rem;
-      }
+    .image {
+      border-radius: 1rem;
+      grid-column: 2/3;
+      object-fit: cover;
     }
   }
 }

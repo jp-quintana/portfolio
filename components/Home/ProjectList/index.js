@@ -75,20 +75,15 @@ const projects = [
 const ProjectList = () => {
   return (
     <section className={styles.section}>
-      <div className={styles.section_title_wrapper}>
-        <code className={styles.section_title}>// projects</code>
-      </div>
-      <div className={styles.float}>
-        {projects.map((project, index) => (
-          <Project
-            key={project.id}
-            index={index}
-            name={project.name}
-            image={project.image}
-            details={project.details}
-          />
-        ))}
-      </div>
+      {projects.map((project, index) => (
+        <Project
+          key={project.id}
+          index={index}
+          name={project.name}
+          image={project.image}
+          details={project.details}
+        />
+      ))}
     </section>
   );
 };

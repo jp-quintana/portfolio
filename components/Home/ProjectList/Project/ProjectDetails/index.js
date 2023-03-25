@@ -37,7 +37,7 @@ const ProjectDetails = ({
           ))}
         </ul>
       </div>
-      <div className={styles.stack}>
+      {/* <div className={styles.stack}>
         Stack:
         <ul className={styles.icons}>
           {stackItems.map((item) => (
@@ -46,7 +46,7 @@ const ProjectDetails = ({
             </li>
           ))}
         </ul>
-      </div>
+      </div> */}
       <div className={styles.footer}></div>
     </div>
   );
