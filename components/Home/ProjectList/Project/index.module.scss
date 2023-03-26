@@ -22,26 +22,43 @@
   .title {
     padding: 3rem 2rem;
     top: 0;
-    left: 0;
+    right: 100%;
     position: absolute;
     color: $color-dark;
     font-size: 4rem;
     line-height: 1;
     font-weight: 900;
     writing-mode: vertical-lr;
+    color: $color-light;
   }
 
   .content {
     width: 100%;
+    min-height: 100%;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     align-items: center;
     gap: 3rem;
 
     .image {
       border-radius: 1rem;
-      grid-column: 2/3;
-      object-fit: cover;
+      // grid-column: 2/3;
+      object-fit: fill;
     }
   }
+
+  // .content {
+  //   width: 100%;
+  //   min-height: 100%;
+  //   display: grid;
+  //   grid-template-columns: repeat(2, 1fr);
+  //   align-items: center;
+  //   gap: 3rem;
+
+  //   .image {
+  //     border-radius: 1rem;
+  //     // grid-column: 2/3;
+  //     object-fit: fill;
+  //   }
+  // }
 }
