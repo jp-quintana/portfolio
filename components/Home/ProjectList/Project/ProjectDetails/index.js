@@ -1,4 +1,4 @@
-import { FaAngleRight } from 'react-icons/fa';
+import { FaAngleRight, FaExternalLinkAlt, FaGithub } from 'react-icons/fa';
 
 import styles from './index.module.scss';
 
@@ -47,7 +47,14 @@ const ProjectDetails = ({
           ))}
         </ul>
       </div> */}
-      <div className={styles.footer}></div>
+      <div className={styles.footer}>
+        {buttons.map((button) => (
+          <a href={button.href} className={styles.button}>
+            {button.content}{' '}
+            {button.content === 'code' ? <FaGithub /> : <FaExternalLinkAlt />}
+          </a>
+        ))}
+      </div>
     </div>
   );
 };

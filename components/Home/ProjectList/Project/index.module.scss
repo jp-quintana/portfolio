@@ -33,12 +33,13 @@
   }
 
   .content {
-    width: 100%;
+    width: 90%;
     min-height: 100%;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
-    gap: 3rem;
+    gap: 6rem;
+    max-width: 125rem;
 
     .image {
       border-radius: 1rem;
