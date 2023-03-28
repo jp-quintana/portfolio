@@ -49,7 +49,7 @@ const ProjectDetails = ({
       </div> */}
       <div className={styles.footer}>
         {buttons.map((button) => (
-          <a href={button.href} className={styles.button}>
+          <a key={button.id} href={button.href} className={styles.button}>
             {button.content}{' '}
             {button.content === 'code' ? <FaGithub /> : <FaExternalLinkAlt />}
           </a>
