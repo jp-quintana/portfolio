@@ -3,36 +3,23 @@ import Slider from 'components/UI/Slider';
 
 import styles from './index.module.scss';
 
-const Project = ({ index, name, image, details }) => {
+const Project = ({ index, name, images, details }) => {
   return (
     <div className={styles.container}>
       <div className={styles.wrapper}>
-        {/* <h2 className={styles.title}>{name}</h2> */}
         <div className={styles.content}>
           <div className={styles.slider_wrapper}>
             <Slider
-              // slides={selectedVariant.images}
-              bp={{
-                500: {
-                  slidesPerView: 1.5,
-                },
-                600: {
-                  slidesPerView: 1.7,
-                },
-                800: {
-                  slidesPerView: 2,
-                },
-              }}
-              slidesPerView={1.3}
+              slides={images}
+              slidesPerView={1}
               spaceBetween={30}
-              loop={true}
-              centeredSlides={true}
-              grabCursor={true}
+              loop
+              centeredSlides
+              grabCursor
               sliderClassName={styles.slider}
               slideClassName={styles.slide}
               imageClassName={styles.image}
             />
-            {/* <img className={styles.image} src={image} alt="" /> */}
           </div>
           <ProjectDetails
             projectName={name}

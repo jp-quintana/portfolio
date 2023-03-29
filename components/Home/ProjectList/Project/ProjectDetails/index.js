@@ -10,18 +10,34 @@ const ProjectDetails = ({
   stackItems,
   buttons,
 }) => {
-  const descriptionContent =
-    projectName === 'react-shopping-cart' ? (
+  let descriptionContent;
+
+  if (projectName === 'react-shopping-cart') {
+    descriptionContent = (
       <p>
         React and Firebase shopping cart app. This app's design is a clone of{' '}
         <a target="_blank" href="https://alphaleteathletics.com/">
-          alphalete's webpage
+          Alphalete's webpage
         </a>
         , a premium fitness and lifestyle wear brand.
       </p>
-    ) : (
-      <p>{description}</p>
     );
+  }
+
+  if (projectName === 'mern-note-app') {
+    descriptionContent = (
+      <p>
+        MERN note app. This app's design is a clone of popular productivity app{' '}
+        <a target="_blank" href="https://www.notion.so/">
+          Notion
+        </a>
+        . Currently WIP, this app looks to provide the ability to create and
+        save different notes. Will be done soon!
+      </p>
+    );
+  }
+
+  console.log(buttons);
 
   return (
     <div className={styles.container}>
@@ -38,22 +54,32 @@ const ProjectDetails = ({
           ))}
         </ul>
       </div>
-      {/* <div className={styles.stack}>
-        Stack:
-        <ul className={styles.icons}>
-          {stackItems.map((item) => (
-            <li key={item.id}>
-              <img src={item.image} alt={item.image} />
-            </li>
-          ))}
-        </ul>
-      </div> */}
+
       <div className={styles.footer}>
         {buttons.map((button) => (
-          <a key={button.id} href={button.href} className={styles.button}>
-            {button.content}{' '}
-            {button.content === 'code' ? <FaGithub /> : <FaExternalLinkAlt />}
-          </a>
+          <div key={button.id}>
+            {button.href && (
+              <a
+                // key={}
+                target="_blank"
+                href={button.href ? button.href : ''}
+                className={styles.button}
+                disabled
+              >
+                {button.content} {button.content === 'code' && <FaGithub />}
+                {button.content === 'live demo' && <FaExternalLinkAlt />}
+              </a>
+            )}
+            {!button.href && (
+              <div
+                // key={button.id}
+                className={`${styles.button} ${styles.disabled}`}
+              >
+                {button.content} {button.content === 'code' && <FaGithub />}
+                {button.content === 'live demo' && <FaExternalLinkAlt />}
+              </div>
+            )}
+          </div>
         ))}
       </div>
     </div>

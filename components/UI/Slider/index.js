@@ -37,11 +37,7 @@ const Slider = ({
       >
         {slides.map((slide) => (
           <SwiperSlide key={slide.id} className={slideClassName}>
-            {/* <img
-              src={}
-              alt=""
-              className={imageClassName}
-            /> */}
+            <img src={slide.src} alt="" className={imageClassName} />
           </SwiperSlide>
         ))}
       </Swiper>
