@@ -25,6 +25,7 @@ const ProjectDetails = ({
 
   return (
     <div className={styles.container}>
+      <p className={styles.title}>{projectName}</p>
       <div className={styles.description}>{descriptionContent}</div>
       <div className={styles.features}>
         Features:
