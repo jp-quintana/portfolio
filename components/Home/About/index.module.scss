@@ -33,6 +33,10 @@
         background: $background-light;
         border-radius: 1rem;
 
+        @media (max-width: 1000px) {
+          max-width: 40rem;
+        }
+
         img {
           border-radius: 1rem;
         }
@@ -48,6 +52,10 @@
 
       .title {
         font-size: 4rem;
+
+        @media (max-width: 768px) {
+          font-size: 3rem;
+        }
       }
 
       .description {

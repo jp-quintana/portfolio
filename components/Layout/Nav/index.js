@@ -38,7 +38,7 @@ const Nav = () => {
           heroIsGone ? styles.nav_rest : ''
         } main-container`}
       >
-        <div className={styles.logo}>jpquintana.dev</div>
+        <div className={styles.logo}>jpquintana-dev</div>
         <ul className={styles.list}>
           <li>Home</li>
           <li>Projects</li>

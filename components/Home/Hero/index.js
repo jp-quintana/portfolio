@@ -8,7 +8,7 @@ const Hero = () => {
       <div className={styles.container}>
         <div className={styles.hero_content}>
           <div className={styles.title_wrapper}>
-            <h1 className={styles.title}>full stack developer</h1>
+            <h1 className={styles.title}>full-stack-developer</h1>
             <p className={styles.subtitle}>
               currently looking for an entry-level job. based out of buenos
               aires, argentina. 📍 🇦🇷
