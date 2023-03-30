@@ -1,0 +1,67 @@
+@import '@/styles/variables.scss';
+
+.section {
+  min-height: 100vh;
+  background: $background-dark;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+  position: relative;
+
+  .container {
+    padding: 10.3rem 0;
+    width: 100rem;
+    max-width: 90%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 6rem;
+
+    @media (max-width: 1000px) {
+      grid-template-columns: 1fr;
+      gap: 3rem;
+    }
+
+    .image_container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      .image_wrapper {
+        padding: 3rem;
+        background: $background-light;
+        border-radius: 1rem;
+
+        img {
+          border-radius: 1rem;
+        }
+      }
+    }
+
+    .description_wrapper {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 3rem;
+      color: $color-light;
+
+      .title {
+        font-size: 4rem;
+      }
+
+      .description {
+        font-size: 2rem;
+      }
+
+      .list {
+        font-size: 1.6rem;
+        li {
+          display: flex;
+          gap: 1rem;
+          align-items: center;
+        }
+      }
+    }
+  }
+}

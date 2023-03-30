@@ -42,6 +42,7 @@ const Nav = () => {
         <ul className={styles.list}>
           <li>Home</li>
           <li>Projects</li>
+          <li>About</li>
           <li>Contact</li>
         </ul>
       </nav>
