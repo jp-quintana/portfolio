@@ -1,5 +1,5 @@
-import { useContext, useEffect, useState } from 'react';
-import { Link } from 'react-scroll';
+import { useEffect, useState } from 'react';
+import { Link, scrollSpy } from 'react-scroll';
 
 import styles from './index.module.scss';
 
@@ -24,6 +24,12 @@ const Nav = () => {
       window.removeEventListener('scroll', handleScroll);
     };
   }, []);
+
+  // useEffect(() => {
+  //   scrollSpy.update();
+
+  //   console.log(scrollSpy);
+  // }, []);
 
   return (
     <div

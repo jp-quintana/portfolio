@@ -32,6 +32,8 @@
       li {
         a {
           padding: 0.5rem;
+          border-bottom: 3px solid transparent;
+          transition: border 0.2s ease-in;
 
           &:hover {
             cursor: pointer;
@@ -52,9 +54,9 @@
 }
 
 .hero_is_active {
-  border-bottom: 3px solid $color-dark;
+  border-bottom: 3px solid $color-dark !important;
 }
 
 .rest_is_active {
-  border-bottom: 3px solid $color-light;
+  border-bottom: 3px solid $color-light !important;
 }
