@@ -1,9 +1,9 @@
 import { useContext, useEffect, useState } from 'react';
-// import ScrollContext from './ScrollContext';
+import { Link } from 'react-scroll';
+
 import styles from './index.module.scss';
 
 const Nav = () => {
-  // const scrollContext = useContext(ScrollContext);
   const [heroIsGone, setHeroIsGone] = useState(false);
 
   useEffect(() => {
@@ -25,8 +25,6 @@ const Nav = () => {
     };
   }, []);
 
-  console.log(heroIsGone);
-
   return (
     <div
       className={`${styles.container} ${
@@ -38,12 +36,60 @@ const Nav = () => {
           heroIsGone ? styles.nav_rest : ''
         } main-container`}
       >
-        <div className={styles.logo}>jpquintana-dev</div>
+        <div className={styles.logo}>
+          <Link to="hero" spy={true} smooth={true} offset={0} duration={100}>
+            jpquintana-dev
+          </Link>
+        </div>
         <ul className={styles.list}>
-          <li>Home</li>
-          <li>Projects</li>
-          <li>About</li>
-          <li>Contact</li>
+          <li>
+            <Link
+              activeClass={styles.hero_is_active}
+              to="hero"
+              spy={true}
+              smooth={true}
+              offset={0}
+              duration={100}
+            >
+              Home
+            </Link>
+          </li>
+          <li>
+            <Link
+              activeClass={styles.rest_is_active}
+              to="projects"
+              spy={true}
+              smooth={true}
+              offset={0}
+              duration={100}
+            >
+              Projects
+            </Link>
+          </li>
+          <li>
+            <Link
+              activeClass={styles.rest_is_active}
+              to="about"
+              spy={true}
+              smooth={true}
+              offset={0}
+              duration={100}
+            >
+              About
+            </Link>
+          </li>
+          <li>
+            <Link
+              activeClass={styles.rest_is_active}
+              to="contact"
+              spy={true}
+              smooth={true}
+              offset={0}
+              duration={100}
+            >
+              Contact
+            </Link>
+          </li>
         </ul>
       </nav>
     </div>

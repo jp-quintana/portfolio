@@ -71,7 +71,7 @@ const projects = [
 
 const ProjectList = () => {
   return (
-    <section className={styles.section}>
+    <section id="projects" className={styles.section}>
       {projects.map((project, index) => (
         <Project
           key={project.id}

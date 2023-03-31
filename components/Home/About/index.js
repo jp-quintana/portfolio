@@ -4,7 +4,7 @@ import styles from './index.module.scss';
 
 const About = () => {
   return (
-    <div className={styles.section}>
+    <section id="about" className={styles.section}>
       <div className={styles.container}>
         <div className={styles.image_container}>
           <div className={styles.image_wrapper}>
@@ -56,7 +56,7 @@ const About = () => {
           </ul>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 
