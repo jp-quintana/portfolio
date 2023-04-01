@@ -1,10 +1,12 @@
 import Nav from './Nav';
+import SideNav from './SideNav';
 
 import styles from './index.module.scss';
 
 const Layout = ({ children }) => {
   return (
     <>
+      {/* <SideNav /> */}
       <header className={styles.header}>
         <Nav />
       </header>
