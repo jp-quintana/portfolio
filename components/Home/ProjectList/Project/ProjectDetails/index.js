@@ -37,8 +37,6 @@ const ProjectDetails = ({
     );
   }
 
-  console.log(buttons);
-
   return (
     <div className={styles.container}>
       <p className={styles.title}>{projectName}</p>

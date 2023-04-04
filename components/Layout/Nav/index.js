@@ -4,7 +4,7 @@ import { FaBars } from 'react-icons/fa';
 
 import styles from './index.module.scss';
 
-const Nav = () => {
+const Nav = ({ openSideNav }) => {
   const [heroIsGone, setHeroIsGone] = useState(false);
 
   useEffect(() => {
@@ -98,7 +98,7 @@ const Nav = () => {
             </Link>
           </li>
           <li>
-            <FaBars />
+            <FaBars onClick={openSideNav} />
           </li>
         </ul>
       </nav>

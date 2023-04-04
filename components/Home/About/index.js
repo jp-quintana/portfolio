@@ -14,11 +14,11 @@ const About = () => {
         <div className={styles.description_wrapper}>
           <h2 className={styles.title}>about-me</h2>
           <p className={styles.description}>
-            My name is Juan Pablo Quintana and I'm a business major who is
-            currently working as a Accounting Administrative. For the past year
-            and a half I've been learning to code and I'm currently looking for
-            my first job in the industry. I currently work with the following
-            stack:
+            My name is Juan Pablo Quintana and I'm currently working as a
+            Accounting Administrative in a small company in Buenos Aires,
+            Argentina. For the past year and a half I've been learning to code
+            and I'm currently looking for my first job in the industry. I
+            currently work with the following stack:
           </p>
           <ul className={styles.list}>
             <li>
