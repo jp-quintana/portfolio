@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import { Link, scrollSpy } from 'react-scroll';
+import { FaBars } from 'react-icons/fa';
 
 import styles from './index.module.scss';
 
@@ -95,6 +96,9 @@ const Nav = () => {
             >
               Contact
             </Link>
+          </li>
+          <li>
+            <FaBars />
           </li>
         </ul>
       </nav>

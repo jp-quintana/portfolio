@@ -26,6 +26,7 @@
     .list {
       margin-left: auto;
       display: flex;
+      align-items: center;
       font-size: 1.6rem;
       gap: 0.5rem;
       font-weight: 700;
@@ -34,6 +35,7 @@
           padding: 0.5rem;
           border-bottom: 3px solid transparent;
           transition: border 0.2s ease-in;
+          display: flex;
 
           &:hover {
             cursor: pointer;
