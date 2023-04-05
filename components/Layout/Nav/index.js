@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { Link, scrollSpy } from 'react-scroll';
+import { Link } from 'react-scroll';
 import { FaBars } from 'react-icons/fa';
 
 import styles from './index.module.scss';
@@ -25,12 +25,6 @@ const Nav = ({ openSideNav }) => {
       window.removeEventListener('scroll', handleScroll);
     };
   }, []);
-
-  // useEffect(() => {
-  //   scrollSpy.update();
-
-  //   console.log(scrollSpy);
-  // }, []);
 
   return (
     <div
@@ -97,7 +91,7 @@ const Nav = ({ openSideNav }) => {
               Contact
             </Link>
           </li>
-          <li>
+          <li className={styles.bars}>
             <FaBars onClick={openSideNav} />
           </li>
         </ul>
