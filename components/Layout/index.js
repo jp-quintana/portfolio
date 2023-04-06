@@ -15,7 +15,10 @@ const Layout = ({ children }) => {
         <Nav openSideNav={() => setSideNavIsOpen(true)} />
         <Modal>
           {sideNavIsOpen && (
-            <SideNav closeSideNav={() => setSideNavIsOpen(false)} />
+            <SideNav
+              sideNavIsOpen
+              closeSideNav={() => setSideNavIsOpen(false)}
+            />
           )}
         </Modal>
       </header>

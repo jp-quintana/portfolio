@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import { Link } from 'react-scroll';
 import { FaBars } from 'react-icons/fa';
+import { useMediaQuery } from 'react-responsive';
 
 import styles from './index.module.scss';
 
@@ -26,6 +27,10 @@ const Nav = ({ openSideNav }) => {
     };
   }, []);
 
+  const isBigScreen = useMediaQuery({
+    query: '(min-width: 768px)',
+  });
+
   return (
     <div
       className={`${styles.container} ${
@@ -43,57 +48,63 @@ const Nav = ({ openSideNav }) => {
           </Link>
         </div>
         <ul className={styles.list}>
-          <li>
-            <Link
-              activeClass={styles.hero_is_active}
-              to="hero"
-              spy={true}
-              smooth={true}
-              offset={0}
-              duration={100}
-            >
-              Home
-            </Link>
-          </li>
-          <li>
-            <Link
-              activeClass={styles.rest_is_active}
-              to="projects"
-              spy={true}
-              smooth={true}
-              offset={0}
-              duration={100}
-            >
-              Projects
-            </Link>
-          </li>
-          <li>
-            <Link
-              activeClass={styles.rest_is_active}
-              to="about"
-              spy={true}
-              smooth={true}
-              offset={0}
-              duration={100}
-            >
-              About
-            </Link>
-          </li>
-          <li>
-            <Link
-              activeClass={styles.rest_is_active}
-              to="contact"
-              spy={true}
-              smooth={true}
-              offset={0}
-              duration={100}
-            >
-              Contact
-            </Link>
-          </li>
-          <li className={styles.bars}>
-            <FaBars onClick={openSideNav} />
-          </li>
+          {isBigScreen && (
+            <>
+              <li>
+                <Link
+                  activeClass={styles.hero_is_active}
+                  to="hero"
+                  spy={true}
+                  smooth={true}
+                  offset={0}
+                  duration={100}
+                >
+                  Home
+                </Link>
+              </li>
+              <li>
+                <Link
+                  activeClass={styles.rest_is_active}
+                  to="projects"
+                  spy={true}
+                  smooth={true}
+                  offset={0}
+                  duration={100}
+                >
+                  Projects
+                </Link>
+              </li>
+              <li>
+                <Link
+                  activeClass={styles.rest_is_active}
+                  to="about"
+                  spy={true}
+                  smooth={true}
+                  offset={0}
+                  duration={100}
+                >
+                  About
+                </Link>
+              </li>
+              <li>
+                <Link
+                  activeClass={styles.rest_is_active}
+                  to="contact"
+                  spy={true}
+                  smooth={true}
+                  offset={0}
+                  duration={100}
+                >
+                  Contact
+                </Link>
+              </li>
+            </>
+          )}
+          {!isBigScreen && (
+            <li className={styles.bars}>
+              <FaBars onClick={openSideNav} />
+            </li>
+          )}
         </ul>
       </nav>
     </div>

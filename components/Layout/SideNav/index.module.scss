@@ -8,15 +8,45 @@
   background-color: $color-light;
 
   .wrapper {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+
     .header {
       display: flex;
       justify-content: flex-end;
       padding: 1rem;
-      font-size: 2rem;
+      font-size: 1.6rem;
 
       svg {
         &:hover {
           cursor: pointer;
+        }
+      }
+    }
+
+    .nav {
+      flex: 1;
+      padding: 1rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      .list {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        li {
+          a {
+            font-size: 3rem;
+            font-weight: 700;
+            border-bottom: 3px solid transparent;
+            transition: border 0.2s ease-in;
+
+            &:hover {
+              border-bottom: 3px solid $color-dark;
+              cursor: pointer;
+            }
+          }
         }
       }
     }
