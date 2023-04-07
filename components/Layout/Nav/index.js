@@ -7,6 +7,7 @@ import styles from './index.module.scss';
 
 const Nav = ({ openSideNav }) => {
   const [heroIsGone, setHeroIsGone] = useState(false);
+  const [isBigScreen, setIsBigScreen] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -27,9 +28,17 @@ const Nav = ({ openSideNav }) => {
     };
   }, []);
 
-  const isBigScreen = useMediaQuery({
+  const bigScreenCheck = useMediaQuery({
     query: '(min-width: 768px)',
   });
+
+  useEffect(() => {
+    if (bigScreenCheck) {
+      setIsBigScreen(true);
+    } else {
+      setIsBigScreen(false);
+    }
+  }, [bigScreenCheck]);
 
   return (
     <div
