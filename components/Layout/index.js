@@ -13,7 +13,7 @@ const Layout = ({ children }) => {
     <>
       <header className={styles.header}>
         <Nav openSideNav={() => setSideNavIsOpen(true)} />
-        <Modal>
+        <Modal className={styles.sidenav_modal}>
           {sideNavIsOpen && (
             <SideNav
               sideNavIsOpen
