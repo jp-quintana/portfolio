@@ -25,5 +25,9 @@
 }
 
 .sidenav_modal {
-  background: $background-light;
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  z-index: 999;
+  background-color: $color-light;
 }

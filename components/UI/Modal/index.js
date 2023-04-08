@@ -8,9 +8,9 @@ const Modal = ({ children, className }) => {
         <>
           {createPortal(
             <motion.div
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              exit={{ opacity: 0 }}
+              initial={{ bottom: `-100vh` }}
+              animate={{ bottom: 0 }}
+              exit={{ bottom: `-100vh` }}
               className={className}
             >
               {children}
