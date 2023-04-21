@@ -14,7 +14,7 @@ const About = () => {
         <div className={styles.description_wrapper}>
           <h2 className={styles.title}>about-me</h2>
           <p className={styles.description}>
-            My name is Juan Pablo Quintana and I'm currently working as a
+            My name is Juan Pablo Quintana and I'm currently working as an
             Accounting Administrative in a small company in Buenos Aires,
             Argentina. For the past year and a half I've been learning to code
             and I'm currently looking for my first job in the industry. I
