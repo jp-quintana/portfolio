@@ -32,7 +32,7 @@ const ProjectDetails = ({
           Notion
         </a>
         . Currently WIP, this app looks to provide the ability to create and
-        save different notes. Will be done soon!
+        save different notes. New features will be added soon!
       </p>
     );
   }

@@ -56,15 +56,18 @@ export async function getStaticProps() {
       images: [
         { id: '1', src: 'images/notion-1.jpg' },
         { id: '2', src: 'images/notion-2.jpg' },
-        { id: '3', src: 'images/notion-1.jpg' },
-        { id: '4', src: 'images/notion-2.jpg' },
+        { id: '3', src: 'images/notion-3.jpg' },
+        { id: '4', src: 'images/notion-4.jpg' },
       ],
       details: {
         name: 'flaakko',
         description: '',
         features: [
           { id: '1', name: 'Create/Save Notes' },
-          { id: '2', name: 'WIP' },
+          { id: '2', name: 'Favorite/Duplicate Notes' },
+          { id: '3', name: 'JWT Auth' },
+          { id: '4', name: 'Mongoose persistence with DAO  setup' },
+          { id: '5', name: 'WIP...' },
         ],
         buttons: [
           {
@@ -74,8 +77,8 @@ export async function getStaticProps() {
           },
           {
             id: '2',
-            content: 'live demo soon',
-            href: '',
+            content: 'live demo',
+            href: 'https://mern-notion-clone.vercel.app/',
           },
         ],
       },
