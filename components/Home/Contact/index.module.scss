@@ -44,12 +44,31 @@
         align-items: center;
         font-size: 2rem;
 
+        @media (max-width: 768px) {
+          gap: 2rem;
+          font-size: 1.6rem;
+        }
+
+        @media (max-width: 480px) {
+          gap: 1rem;
+        }
+
         span {
           font-size: 4rem;
           display: flex;
           padding: 3rem;
           border: 3px solid $color-light;
           border-radius: 100rem;
+
+          @media (max-width: 768px) {
+            font-size: 3rem;
+            padding: 2rem;
+          }
+
+          @media (max-width: 480px) {
+            font-size: 1.2rem;
+            padding: 0.6rem;
+          }
         }
       }
     }

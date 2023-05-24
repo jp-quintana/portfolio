@@ -1,10 +1,11 @@
 .section {
   // TODO: check
   // min-height: calc(100vh - 5.3rem);
-  min-height: calc(100vh);
+  min-height: 100vh;
 
   .container {
     max-width: 90%;
+    position: relative;
 
     .hero_content {
       display: flex;
@@ -17,10 +18,18 @@
 
       .title_wrapper {
         .title {
-          font-size: 8rem;
+          font-size: 7rem;
           font-weight: 900;
           line-height: 1;
           margin-bottom: 1rem;
+
+          @media (max-width: 768px) {
+            font-size: 4rem;
+          }
+
+          @media (max-width: 480px) {
+            font-size: 3rem;
+          }
         }
 
         .subtitle {
@@ -37,39 +46,6 @@
         width: 50%;
         font-size: 3rem;
       }
-
-      // .stack_container {
-      //   margin-top: 10rem;
-      //   border-top: 1px solid #000;
-      //   padding-top: 1rem;
-      //   display: flex;
-      //   justify-content: right;
-
-      //   .stack_wrapper {
-      //     display: inline-flex;
-      //     align-items: center;
-      //     gap: 1rem;
-
-      //     .icons {
-      //       flex: 1;
-      //       display: flex;
-      //       gap: 2rem;
-      //       justify-content: center;
-      //       li {
-      //         display: flex;
-      //         align-items: center;
-      //         img {
-      //           height: 4rem;
-      //           margin: 0 auto;
-      //         }
-      //       }
-      //     }
-
-      //     .comment {
-      //       margin-left: auto;
-      //     }
-      //   }
-      // }
     }
   }
 }
